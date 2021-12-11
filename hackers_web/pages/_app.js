@@ -1,3 +1,7 @@
+/*
+Do not change this file
+*/
+
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
