@@ -1,7 +1,11 @@
 import React from "react";
-
+import Body from "../components/body/Body";
 function Home() {
-  return <h1>Hackers Web</h1>;
+  return (
+    <React.Fragment>
+      <Body />
+    </React.Fragment>
+  );
 }
 
 export default Home;
