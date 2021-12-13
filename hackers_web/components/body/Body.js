@@ -3,6 +3,8 @@ import About from './about/About';
 import Timer from './timer/Timer';
 import Box from "./box/Box";
 import FAQ from "./questions/FAQ";
+import Footer from '../footer/footer';
+
 function Body() {
   return (
     <React.Fragment>
@@ -11,6 +13,7 @@ function Body() {
       <Timer />
       <Box/>
       <FAQ/>
+      <Footer/>
     </React.Fragment>
   );
 }
