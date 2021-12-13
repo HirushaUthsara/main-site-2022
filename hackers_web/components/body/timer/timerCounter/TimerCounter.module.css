@@ -1,0 +1,22 @@
+.timer-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: rgb(199, 199, 199) solid 0.1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+.dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dates div {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color:rgb(1, 1, 112);
+    text-align: left;
+    margin: 1rem;
+}
