@@ -18,9 +18,10 @@
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
-  width: 6rem;
+  width: 10rem;
   font-size: 0.8rem;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .btn-grad:hover {
