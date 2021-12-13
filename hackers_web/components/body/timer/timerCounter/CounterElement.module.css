@@ -1,0 +1,20 @@
+.counter-element{
+    width: 5rem;
+    height: 6rem;
+    margin: 1rem 0 0 0;
+    background: linear-gradient( rgb(233, 233, 233) 50%, rgb(247, 247, 247));
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.count {
+    font-size: 4rem;
+    color:rgb(1, 1, 112);
+    font-weight: 600;
+}
+
+.details {
+    font-size: 0.85rem;
+    color: rgb(1, 1, 112);
+    font-weight: 500;
+}

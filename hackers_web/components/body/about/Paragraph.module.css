@@ -1,0 +1,24 @@
+.para-container {
+  width: 90%;
+  padding: 5%;
+  background: linear-gradient(rgb(219, 219, 219), white 30%);
+  border-radius: 0.5rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.topic {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: rgb(1, 1, 112);
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.details {
+  color: rgba(104, 104, 104, 0.973);
+  font-size: 0.85rem;
+  font-weight: 550;
+  line-height: 1.5;
+  letter-spacing: 0.06rem;
+}
