@@ -1,0 +1,41 @@
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    #ffffff 51%,
+    #c7c7c7 100%
+  );
+  position: relative;
+  left: 20%;
+}
+.btn-grad {
+  margin: 0.5rem;
+  margin-left: 0;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgba(1, 1, 112);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  width: 60%;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: rgba(1, 1, 112);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 960px) {
+  .btn-grad {
+    width: 12rem;
+    left: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.EventHeader {
+    width: 100%;
+    background: linear-gradient(rgb(1, 1, 71), rgb(2, 2, 126), rgb(4, 103, 160), rgb(3, 193, 218));
+    padding: 3rem 0;
+    font-size: 62.5%;
+    margin-top: 1rem;
+}
+
+.EventHeader h2 {
+    color: white;
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0;
+}
+
+.EventHeader h3 {
+    color: rgba(172, 172, 172, 0.65);
+    margin: 0 0 0.2rem 0;
+    text-align: center;
+    font-size: 0.80rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 960px) {
+    .EventHeader {
+        padding: 3rem 0 10rem 0;
+    }
+}
