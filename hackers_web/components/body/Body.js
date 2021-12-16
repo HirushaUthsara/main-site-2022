@@ -5,6 +5,7 @@ import Box from "./box/Box";
 import FAQ from "./questions/FAQ";
 import Events from "./events/Events";
 import ContactUs from "./contactUs/ContactUs";
+
 function Body() {
   return (
     <React.Fragment>
@@ -12,12 +13,11 @@ function Body() {
       <Box />
       <Timer />
       <Box />
-      <Events/>
-      <Box/>
+      <Events />
+      <Box />
       <FAQ />
       <Box />
-      <ContactUs/>
-      <Box />
+      <ContactUs />
     </React.Fragment>
   );
 }
