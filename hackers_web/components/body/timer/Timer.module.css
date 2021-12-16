@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,600;1,700&display=swap");
 
 .timer-container {
   font-size: 62.5%;
@@ -25,11 +25,36 @@
 }
 
 .counter-text {
-    margin-top: 1.4rem;
-    text-align: left;
+  margin-top: 1.4rem;
+  text-align: left;
 }
 
-.counter-text h3{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
+.counter-text h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .timerContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .counter-text {
+    width: 15rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1012px) {
+  .counter-text {
+    width: 20rem;
+    margin-right: 0rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
