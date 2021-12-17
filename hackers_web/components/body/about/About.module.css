@@ -1,10 +1,11 @@
 .paragraph-container {
+  background-image: url("../../../assets/demo/banners/hero-2.png");
+  background-repeat: no-repeat;
   font-size: 62.5%;
-  width: 90vw;
-  position: relative;
-  left: 5vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .para {
@@ -20,9 +21,6 @@
 
 @media screen and (min-width: 426px) {
   .paragraph-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    background-repeat: repeat-x;
   }
 }

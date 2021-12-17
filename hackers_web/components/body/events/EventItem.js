@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./EventItem.module.css";
-
 function EventItem(props) {
   return (
     <a href="#" className={classes.anchor}>

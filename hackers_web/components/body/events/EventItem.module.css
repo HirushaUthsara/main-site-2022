@@ -49,16 +49,16 @@
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 550px) and (max-width: 960px) {
+@media screen and (min-width: 550px) and (max-width: 850px) {
   .eventItem-container {
     height: calc(85vw * 8 / 18);
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 850px) {
   .eventItem-container {
     margin: 1rem;
-    width: 400px;
-    height: calc(400px * 300.15 / 337.675);
+    width: 350px;
+    height: calc(350px * 300.15 / 337.675);
   }
 }
