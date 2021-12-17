@@ -1,11 +1,29 @@
 .eventItem-container {
-  background-image: url("../../../assets/demo/events/coders.jpg");
   background-size: cover;
   width: 100%;
   height: 80vw;
   border-radius: 0.25rem;
   z-index: -1;
   opacity: 1;
+}
+
+.codersImg {
+  background-image: url("/img/events/coders.jpg");
+}
+
+.datathonImg {
+  background-image: url("/img/events/blog-10.jpg");
+}
+.compititiveProgrammingImg {
+  background-image: url("/img/events/blog-10.jpg");
+}
+
+.developerSessionsImg {
+  background-image: url("/img/events/Devsession.png");
+}
+
+.warzoneImg {
+  background-image: url("/img/events/warzone.jpg");
 }
 
 .img-container {

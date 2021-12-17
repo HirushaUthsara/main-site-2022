@@ -1,5 +1,5 @@
 .paragraph-container {
-  background-image: url("../../../assets/demo/banners/hero-2.png");
+  background-image: url("/img/bg/hero-2.png");
   background-repeat: no-repeat;
   font-size: 62.5%;
   display: flex;

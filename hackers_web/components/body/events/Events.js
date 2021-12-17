@@ -19,11 +19,11 @@ function Events() {
     <React.Fragment>
       <EventHeader />
       <div className={classes["events-container"]}>
-        <EventItem header={header1} details={details1} />
-        <EventItem header={header2} details={details2} />
-        <EventItem header={header3} details={details3} />
-        <EventItem header={header4} details={details4} />
-        <EventItem header={header5} details={details5} />
+        <EventItem header={header1} details={details1} img="datathonImg"/>
+        <EventItem header={header2} details={details2} img="codersImg"/>
+        <EventItem header={header3} details={details3} img="compititiveProgrammingImg"/>
+        <EventItem header={header4} details={details4} img="developerSessionsImg"/>
+        <EventItem header={header5} details={details5} img="warzoneImg"/>
       </div>
     </React.Fragment>
   );
