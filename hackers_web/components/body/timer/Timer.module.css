@@ -2,6 +2,8 @@
 
 .timer-container {
   font-size: 62.5%;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
   width: 90vw;
   position: relative;
   left: 5vw;
@@ -13,7 +15,7 @@
 .stay-tuned {
   color: rgba(95, 95, 95, 0.973);
   font-size: 0.85rem;
-  font-weight: 450;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.06rem;
 }
@@ -36,6 +38,7 @@
 
 @media screen and (min-width: 900px) {
   .timerContent {
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -45,6 +48,10 @@
   .counter-text {
     width: 15rem;
     margin-right: 2rem;
+  }
+
+  .timer-container {
+    margin-top: 1.5rem;
   }
 }
 
@@ -56,5 +63,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 704px) and (max-width: 899px) {
+  .timer-container {
+    margin-top: 1rem;
   }
 }
