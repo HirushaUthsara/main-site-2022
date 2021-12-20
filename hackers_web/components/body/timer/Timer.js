@@ -17,15 +17,17 @@ function Timer() {
       >
         Happening Now!
       </h2>
-      <div className={classes["counter-text"]}>
-        <h3>Developer Series Sessions</h3>
-        <p className={classes["stay-tuned"]}>
-          Introduction to some utilities that an engineer's must have knowledge
-          about
-        </p>
+      <div className={classes.timerContent}>
+        <div className={classes["counter-text"]}>
+          <h3>Developer Series Sessions</h3>
+          <p className={classes["stay-tuned"]}>
+            Introduction to some utilities that an engineer's must have
+            knowledge about
+          </p>
+          <Button />
+        </div>
+        <TimerCounter />
       </div>
-      <Button />
-      <TimerCounter/>
     </div>
   );
 }

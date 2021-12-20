@@ -1,28 +1,84 @@
-.timer-container{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    border: rgb(199, 199, 199) solid 0.1rem;
-    border-radius: 0.5rem;
-    align-items: center;
+.timer-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: rgb(199, 199, 199) solid 0.1rem;
+  border-radius: 0.3rem;
+  align-items: center;
 }
 
 .dates {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .dates div {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color:rgb(1, 1, 112);
-    text-align: left;
-    margin: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(1, 1, 112);
+  text-align: left;
+  margin: 1rem;
 }
 
 .dates p {
-    margin-bottom: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+@media screen and (min-width: 376px) and (max-width: 600px) {
+  .timer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  .dates {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  .timer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 8rem);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  .dates {
+    grid-column: 1/5;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .timer-container {
+    /*width: 692.1px;*/
+    padding: 1.5rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .dates {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .timer-container {
+    width: 40rem;
+    padding: 1.5rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .dates {
+    display: flex;
+    flex-direction: column;
+  }
 }
