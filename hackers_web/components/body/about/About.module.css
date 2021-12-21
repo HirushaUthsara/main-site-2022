@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,700&display=swap');
-
 .paragraph-container {
+  background-image: url("/img/bg/hero-2.png");
+  background-repeat: no-repeat;
   font-size: 62.5%;
-  width: 90vw;
-  position: relative;
-  left: 5vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .para {
@@ -15,13 +14,13 @@
 .topic {
   color: rgb(1, 1, 112);
   text-align: center;
-  font-family: "Raleway", sans-serif;
   margin-bottom: 2.1rem;
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
-
-.animate__animated.animate__fadeInDown {
-    --animate-duration: 2s;
+@media screen and (min-width: 426px) {
+  .paragraph-container {
+    background-repeat: repeat-x;
   }
-  
+}

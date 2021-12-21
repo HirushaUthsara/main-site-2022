@@ -11,11 +11,11 @@ function TimerCounter() {
       <CounterElement count="0" detail="Seconds" />
       <div className={classes.dates}>
         <div>
-          <p>Start:</p>
+          <p><strong>Start:</strong></p>
           <p>3 November, 2020 </p>
         </div>
         <div>
-          <p>End:</p>
+          <p><strong>End:</strong></p>
           <p>6 December, 2020</p>
         </div>
       </div>

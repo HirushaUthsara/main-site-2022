@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
-import classes from "./footer.module.css";
+import classes from "./Footer.module.css";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,7 +9,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function footer() {
+export default function Footer() {
   return (
     <div className={`${classes["footer"]}`}>
       <Container className="text-center">

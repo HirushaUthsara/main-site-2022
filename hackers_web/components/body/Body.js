@@ -1,9 +1,10 @@
 import React from "react";
-import About from './about/About';
-import Timer from './timer/Timer';
+import About from "./about/About";
+import Timer from "./timer/Timer";
 import Box from "./box/Box";
 import FAQ from "./questions/FAQ";
-import Footer from '../footer/footer';
+import Events from "./events/Events";
+import ContactUs from "./contactUs/ContactUs";
 
 function Body() {
   return (
@@ -11,9 +12,12 @@ function Body() {
       <About />
       <Box />
       <Timer />
-      <Box/>
-      <FAQ/>
-      <Footer/>
+      <Box />
+      <Events />
+      <Box />
+      <FAQ />
+      <Box />
+      <ContactUs />
     </React.Fragment>
   );
 }
