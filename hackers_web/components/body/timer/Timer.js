@@ -29,7 +29,10 @@ function Timer() {
 
   let seconds = parseInt(date.subtract(endDate, updatingDate).toSeconds());
 
-  const hoursMinSecs = {days, hours, minutes, seconds };
+  let hoursMinSecs = { days, hours, minutes, seconds };
+  if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
+    hoursMinSecs = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  }
 
   return (
     <div className={classes["timer-container"]}>

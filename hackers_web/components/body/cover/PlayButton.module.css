@@ -1,0 +1,62 @@
+.btn-container {
+  margin-left: 50px;
+}
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    #ffffff 51%,
+    #c7c7c7 100%
+  );
+  position: relative;
+  left: 20%;
+}
+.btn-grad {
+  margin: 0.5rem;
+  margin-left: 0;
+  padding: 1px 45px 11px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgba(1, 1, 112);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  width: 30px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: rgba(1, 1, 112);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 960px) {
+  .btn-grad {
+    width: 12rem;
+    left: 0;
+  }
+}
+
+.icon {
+  display: inline-block;
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .btn-container {
+    margin-left: 0px;
+  }
+  .btn-grad {
+      width: 100%;
+      left: 0;
+  }
+}
