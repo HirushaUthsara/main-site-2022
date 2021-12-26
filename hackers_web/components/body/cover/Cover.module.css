@@ -1,0 +1,46 @@
+.cover-container {
+  background: url("/img/bg/cover_temp7.jpg");
+  background-size: cover;
+  background-position: 0px -150px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  margin-bottom: 90px;
+}
+
+.cover-container h1 {
+  color: white;
+  font-size: 65px;
+  letter-spacing: -1px;
+  margin: 0;
+  margin-left: 50px;
+}
+
+.cover-container p {
+  color: darkgrey;
+  margin-top: 35px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover-container {
+    margin-bottom: 80px;
+    align-items: center;
+    background-position: 0px 0px;
+  }
+  .cover-container h1,
+  .cover-container p {
+    margin-left: 0;
+    text-align: center;
+    font-size: 55px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .cover-container p {
+    font-size: 15px;
+  }
+}
