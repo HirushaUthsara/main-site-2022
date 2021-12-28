@@ -5,10 +5,12 @@ import Box from "./box/Box";
 import FAQ from "./questions/FAQ";
 import Events from "./events/Events";
 import ContactUs from "./contactUs/ContactUs";
+import Cover from "./cover/Cover";
 
 function Body() {
   return (
     <React.Fragment>
+      <Cover />
       <About />
       <Box />
       <Timer />
