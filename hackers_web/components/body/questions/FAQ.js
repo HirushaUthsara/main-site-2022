@@ -57,7 +57,7 @@ function FAQ() {
   const body3 = <p className={classes.body}>hackersclub@eng.pdn.ac.lk</p>;
   return (
     <React.Fragment>
-      <h2 className={classes.topic}>Have a Question?</h2>
+      <h2 className={classes.topic} >Have a Question?</h2>
       <div className={classes["accordion-container"]}>
         <Accordion defaultActiveKey="0">
           <QA_Pair eventkey="0" header={header1} body={body1} />
