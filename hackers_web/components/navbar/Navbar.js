@@ -1,8 +1,17 @@
 import classes from "./Navbar.module.css";
+import {useState, useEffect} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
+import {ToggleButton} from "react-bootstrap";
 
 export default function NavBar(props) {
+  const [select, setSelect] = useState(["Home"]);
+  const style = classes.style;
+
+  function navSelect(value) {
+    setSelect(value);
+  }
+
   return (
     <>
       <nav class={`navbar navbar-expand-lg ${classes.Navbar}`}>
@@ -28,13 +37,18 @@ export default function NavBar(props) {
             <div class="navbar-nav ms-auto">
               {Items.map((Item) => (
                 <a
-                  className={`nav-link ${classes.Nav} ${Item.active}`}
+                  className={`nav-link ${classes.Nav} ${
+                    Item.label == select ? style : ""
+                  }`}
                   href={Item.path}
                   data-bs-toggle="collapse"
                   data-bs-target="#navbar"
                   aria-controls="navbar"
+                  onClick={() => navSelect(Item.label)}
                 >
-                  <h7 className={classes.NavItem}>{Item.label}</h7>
+                  <h7 className={classes.NavItem} >
+                    {Item.label}
+                  </h7>
                 </a>
               ))}
             </div>
@@ -44,9 +58,8 @@ export default function NavBar(props) {
     </>
   );
 }
-
 const Items = [
-  {label: "Home", path: "#Home", active:"active"},
+  {label: "Home", path: "#Home"},
   {label: "About", path: "#About"},
   {label: "Live Now", path: "#Live_Now"},
   {label: "Events", path: "#Events"},
