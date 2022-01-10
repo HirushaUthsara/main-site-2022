@@ -1,12 +1,8 @@
-import React from 'react'
-import classes from './Box.module.css';
+import React from "react";
+import classes from "./Box.module.css";
 
-function Box() {
-    return (
-        <div className={classes.box}>
-            
-        </div>
-    )
+function Box(props) {
+  return <div className={classes.box} id={props.id}></div>;
 }
 
 export default Box;
