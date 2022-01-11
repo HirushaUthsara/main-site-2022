@@ -1,73 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,600;1,700&display=swap");
-
 .timer-container {
-  font-size: 62.5%;
-  margin-top: -1.5rem;
-  margin-bottom: 1rem;
-  width: 90vw;
-  position: relative;
-  left: 5vw;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+    font-size: 62.5%;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    width: 90vw;
+    position: relative;
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .stay-tuned {
-  color: rgba(95, 95, 95, 0.973);
-  font-size: 0.85rem;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.06rem;
+    color: rgba(95, 95, 95, 0.973);
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.06rem;
 }
 
 .happenning-now {
-  font-size: 2.4rem;
-  color: rgb(1, 1, 112);
-  margin: 0;
+    font-size: 2.4rem;
+    color: rgb(1, 1, 112);
+    margin: 0;
 }
 
 .counter-text {
-  margin-top: 1.4rem;
-  text-align: left;
+    margin-top: 1.4rem;
+    text-align: left;
 }
 
 .counter-text h3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 900px) {
-  .timerContent {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .counter-text {
-    width: 15rem;
-    margin-right: 2rem;
-  }
-
-  .timer-container {
-    margin-top: 1.5rem;
-  }
+    .timerContent {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .counter-text {
+        width: 15rem;
+        margin-right: 2rem;
+    }
+    .timer-container {
+        margin-top: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1012px) {
-  .counter-text {
-    width: 20rem;
-    margin-right: 0rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .counter-text {
+        width: 20rem;
+        margin-right: 0rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 704px) and (max-width: 899px) {
-  .timer-container {
-    margin-top: 1rem;
-  }
+    .timer-container {
+        margin-top: 1rem;
+    }
 }
