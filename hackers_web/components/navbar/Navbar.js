@@ -1,28 +1,36 @@
 import classes from "./Navbar.module.css";
-import {useState, useEffect} from "react";
+import {useState, useEffect, useRef} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {ToggleButton} from "react-bootstrap";
+import Link from "next/link";
+import useWindowSize from "./WindowSize";
 
 export default function NavBar(props) {
   const [select, setSelect] = useState(["Home"]);
   const style = classes.style;
+  const size = useWindowSize();
+
 
   function navSelect(value) {
     setSelect(value);
+    size.width<992?
+    setTimeout(() => {
+      document.getElementById("button").click();
+    }, 700):null;
   }
 
   return (
     <>
       <nav class={`navbar navbar-expand-lg ${classes.Navbar}`}>
         <div class="container">
-          <a class="navbar-brand" href="/">
+          <Link class="navbar-brand" href="/">
             <img
               src="/logo-2.png"
-              className="d-inline-block align-top"
+              className={`d-inline-block align-top ${classes.link}`}
               alt="Hackers Logo"
             />
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -30,6 +38,7 @@ export default function NavBar(props) {
             data-target="#navbar"
             aria-controls="navbar"
             aria-expanded="false"
+            id="button"
           >
             <FontAwesomeIcon icon={faBars} />
           </button>
@@ -46,7 +55,7 @@ export default function NavBar(props) {
                   aria-controls="navbar"
                   onClick={() => navSelect(Item.label)}
                 >
-                  <h7 className={classes.NavItem} >
+                  <h7 className={classes.NavItem}>
                     {Item.label}
                   </h7>
                 </a>

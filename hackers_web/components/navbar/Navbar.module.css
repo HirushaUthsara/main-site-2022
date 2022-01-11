@@ -5,9 +5,13 @@
     top: 0;
 }
 
+.Navbar .link {
+    height: 40px;
+}
+
 .Navbar img {
-    max-width: 30px;
-    width: 30px;
+    max-width: 35px;
+    width: 35px;
 }
 
 .Navbar button {
