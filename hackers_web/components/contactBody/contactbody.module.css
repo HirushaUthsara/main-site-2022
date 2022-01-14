@@ -1,0 +1,11 @@
+.top-para {
+  display: flex;
+  align-items: center;
+}
+
+.committee-header {
+  margin-top: 2%;
+  padding-top: 5%;
+  border-top: 1px solid #2d2e2d;
+  text-align: center;
+}

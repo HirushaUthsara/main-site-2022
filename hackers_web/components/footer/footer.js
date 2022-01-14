@@ -23,7 +23,7 @@ export default function Footer() {
                 </Link>
               </Row>
               <Row>
-                <Link href="#">
+                <Link href="/contact">
                   <a>Contact Us</a>
                 </Link>
               </Row>
