@@ -1,8 +1,8 @@
 import classes from "./Navbar.module.css";
-import {useState, useEffect, useRef} from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBars} from "@fortawesome/free-solid-svg-icons";
-import {ToggleButton} from "react-bootstrap";
+import { useState, useEffect, useRef, Fragment } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { ToggleButton } from "react-bootstrap";
 import Link from "next/link";
 import useWindowSize from "./WindowSize";
 
@@ -11,20 +11,20 @@ export default function NavBar(props) {
   const style = classes.style;
   const size = useWindowSize();
 
-
   function navSelect(value) {
     setSelect(value);
-    size.width<992?
-    setTimeout(() => {
-      document.getElementById("button").click();
-    }, 700):null;
+    size.width < 992
+      ? setTimeout(() => {
+          document.getElementById("button").click();
+        }, 700)
+      : null;
   }
 
   return (
-    <>
-      <nav class={`navbar navbar-expand-lg ${classes.Navbar}`}>
-        <div class="container">
-          <Link class="navbar-brand" href="/">
+    <Fragment>
+      <nav className={`navbar navbar-expand-lg ${classes.Navbar}`}>
+        <div className="container">
+          <Link className="navbar-brand" href="/">
             <img
               src="/logo-2.png"
               className={`d-inline-block align-top ${classes.link}`}
@@ -32,7 +32,7 @@ export default function NavBar(props) {
             />
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbar"
@@ -40,12 +40,18 @@ export default function NavBar(props) {
             aria-expanded="false"
             id="button"
           >
-            <FontAwesomeIcon icon={faBars} />
+            <img
+              src="/fa-bar.png"
+              className="d-inline-block align-top"
+              alt="Hackers Logo"
+            />
+            {/*<FontAwesomeIcon icon={faBars} />*/}
           </button>
-          <div class="navbar-collapse collapse" id="navbar">
-            <div class="navbar-nav ms-auto">
+          <div className="navbar-collapse collapse" id="navbar">
+            <div className="navbar-nav ms-auto">
               {Items.map((Item) => (
                 <a
+                  key={Item.label}
                   className={`nav-link ${classes.Nav} ${
                     Item.label == select ? style : ""
                   }`}
@@ -55,24 +61,22 @@ export default function NavBar(props) {
                   aria-controls="navbar"
                   onClick={() => navSelect(Item.label)}
                 >
-                  <h7 className={classes.NavItem}>
-                    {Item.label}
-                  </h7>
+                  <h6 className={classes.NavItem}>{Item.label}</h6>
                 </a>
               ))}
             </div>
           </div>
         </div>
       </nav>
-    </>
+    </Fragment>
   );
 }
 const Items = [
-  {label: "Home", path: "#Home"},
-  {label: "About", path: "#About"},
-  {label: "Live Now", path: "#Live_Now"},
-  {label: "Events", path: "#Events"},
-  {label: "FAQ", path: "#FAQ"},
-  {label: "Contact Us", path: "#ContactUs"},
-  {label: "Cheatsheet", path: "/cheatsheet"},
+  { label: "Home", path: "#Home" },
+  { label: "About", path: "#About" },
+  { label: "Live Now", path: "#Live_Now" },
+  { label: "Events", path: "#Events" },
+  { label: "FAQ", path: "#FAQ" },
+  { label: "Contact Us", path: "#ContactUs" },
+  { label: "Cheatsheet", path: "/cheatsheet" },
 ];
