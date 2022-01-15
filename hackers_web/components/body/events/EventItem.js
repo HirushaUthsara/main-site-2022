@@ -3,7 +3,7 @@ import classes from "./EventItem.module.css";
 function EventItem(props) {
   const img = props.img;
   return (
-    <a href="#" className={classes.anchor}>
+    <a href="#" className={`${classes.anchor} ${classes.disable}`} onClick={e => e.preventDefault()}>
       <div className={`${classes["eventItem-container"]} ${classes[img]}`}>
         <div className={classes["img-container"]}>
           <div>

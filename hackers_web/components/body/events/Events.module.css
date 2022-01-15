@@ -14,9 +14,21 @@
     gap: 1rem 5vw;
   }
 }
-
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 960px) and (max-width: 1034px) {
   .events-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 7rem;
+  }
+}
+
+@media screen and (min-width: 1034px) {
+  .events-container {
+    width: 74vw;
+    left: 13vw;
     display: flex;
     flex-direction: row;
     justify-content: center;

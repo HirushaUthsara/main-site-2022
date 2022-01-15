@@ -1,9 +1,9 @@
 .EventHeader {
     width: 100%;
-    background: linear-gradient(rgb(1, 1, 71), rgb(2, 2, 126), rgb(4, 103, 160), rgb(3, 193, 218));
+    background: linear-gradient(rgb(0, 0, 95), rgb(0, 0, 75), #000030);
     padding: 3rem 0;
     font-size: 62.5%;
-    margin-top: 1rem;
+    margin-top: -1rem;
 }
 
 .EventHeader h2 {

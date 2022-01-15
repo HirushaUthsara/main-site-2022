@@ -11,14 +11,15 @@ function Body() {
   return (
     <React.Fragment>
       <Cover />
+      <Box id="About" />
       <About />
-      <Box />
+      <Box id="Live_Now" />
       <Timer />
-      <Box />
+      <Box id="Events" />
       <Events />
-      <Box />
+      <Box id="FAQ" />
       <FAQ />
-      <Box />
+      <Box id="ContactUs" />
       <ContactUs />
     </React.Fragment>
   );
