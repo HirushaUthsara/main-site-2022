@@ -4,7 +4,7 @@ import classes from "./ContactButton.module.css";
 function ContactButton() {
   return (
     <div>
-      <a className={`${classes['btn-grad']}` } href="/contact-us">Contact Us</a>
+      <a className={`${classes['btn-grad']}` } href="/contact">Contact Us</a>
     </div>
   );
 }

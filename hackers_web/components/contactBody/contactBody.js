@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
 import classes from "./contactbody.module.css";
-import Committee_21_22 from "./committee_21_22/Committee_21_22";
+import Committee from "./committee/Committee";
 
 export default function ContactBody() {
   return (
@@ -34,7 +34,7 @@ export default function ContactBody() {
           <h2>Executive Committee</h2>
           <h3>2021/2022</h3>
         </Row>
-        <Committee_21_22 />
+        <Committee />
       </Container>
     </div>
   );

@@ -5,6 +5,11 @@ import Footer from "../components/footer/Footer";
 import NavBar from "../components/navbar/Navbar";
 import Head from "next/head";
 
+import '@fortawesome/fontawesome-svg-core/styles.css';
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false; /* eslint-disable import/first */
+
 function Home() {
   return (
     <React.Fragment>
