@@ -23,7 +23,7 @@ export default function Footer() {
                 </Link>
               </Row>
               <Row>
-                <Link href="#">
+                <Link href="/contact">
                   <a>Contact Us</a>
                 </Link>
               </Row>
@@ -37,11 +37,6 @@ export default function Footer() {
           <Col md={6} lg={2}>
             <h4>Events</h4>
             <Container variant="flush" className={`${classes["footer-links"]}`}>
-              <Row>
-                <Link href="#">
-                  <a>Pre-Datathon</a>
-                </Link>
-              </Row>
               <Row>
                 <Link href="#">
                   <a>Pre-HackaThon</a>

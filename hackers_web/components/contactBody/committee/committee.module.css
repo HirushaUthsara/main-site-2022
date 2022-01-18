@@ -1,0 +1,35 @@
+.committee {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.member {
+  padding-top: 10%;
+  transition: transform 0.5s;
+}
+
+.member:hover {
+  transform: scale(1.1);
+}
+
+.member_img {
+  border-radius: 200px;
+}
+
+.member-text {
+  text-align: center;
+}
+
+.member_post {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.member_name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.members_row {
+  margin-top: 5%;
+}
