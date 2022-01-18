@@ -21,11 +21,13 @@
 }
 
 .member_post {
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 .member_name {
   font-size: 15px;
+  font-weight: 600;
 }
 
 .members_row {
