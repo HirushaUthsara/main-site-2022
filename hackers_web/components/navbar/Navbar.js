@@ -1,15 +1,27 @@
 import classes from "./Navbar.module.css";
-import { useState, useEffect, useRef, Fragment } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { ToggleButton } from "react-bootstrap";
+import { useState, useEffect, Fragment } from "react";
 import Link from "next/link";
 import useWindowSize from "./WindowSize";
+import useWindowPath from "./WindowPath";
 
 export default function NavBar(props) {
   const [select, setSelect] = useState(["Home"]);
+  const [navItems, setNavItems] = useState(Items);
   const style = classes.style;
   const size = useWindowSize();
+  const path = useWindowPath();
+
+  useEffect(() => {
+    if (path.path == "/") {
+      setNavItems(ItemsHome);
+    } else if (path.path == "/contact") {
+      setNavItems(ItemsTeam);
+    } else if (path.path == "/cheatsheet") {
+      setNavItems(ItemsCheatsheet);
+    }
+  }, [path]);
+
+  console.log(path.path);
 
   function navSelect(value) {
     setSelect(value);
@@ -45,21 +57,20 @@ export default function NavBar(props) {
               className="d-inline-block align-top"
               alt="Hackers Logo"
             />
-            {/*<FontAwesomeIcon icon={faBars} />*/}
           </button>
           <div className="navbar-collapse collapse" id="navbar">
             <div className="navbar-nav ms-auto">
-              {Items.map((Item) => (
+              {navItems.map((Item) => (
                 <a
                   key={Item.label}
                   className={`nav-link ${classes.Nav} ${
-                    Item.label == select ? style : ""
+                    Item.id == select ? style : ""
                   }`}
                   href={Item.path}
                   data-bs-toggle="collapse"
                   data-bs-target="#navbar"
                   aria-controls="navbar"
-                  onClick={() => navSelect(Item.label)}
+                  onClick={() => navSelect(Item.id)}
                 >
                   <h6 className={classes.NavItem}>{Item.label}</h6>
                 </a>
@@ -71,12 +82,24 @@ export default function NavBar(props) {
     </Fragment>
   );
 }
-const Items = [
-  { label: "Home", path: "#Home" },
-  { label: "About", path: "#About" },
-  { label: "Live Now", path: "#Live_Now" },
-  { label: "Events", path: "#Events" },
-  { label: "FAQ", path: "#FAQ" },
-  { label: "Contact Us", path: "#ContactUs" },
-  { label: "Cheatsheet", path: "/cheatsheet" },
+const Items = [];
+const ItemsHome = [
+  {label: "Home", path: "#Home", id: "Home"},
+  {label: "About", path: "#About", id: "About"},
+  {label: "Live Now", path: "#Live_Now", id: "Live Now"},
+  {label: "Events", path: "#Events", id: "Events"},
+  {label: "FAQ", path: "#FAQ", id: "FAQ"},
+  {label: "Contact Us", path: "#ContactUs", id: "Contact Us"},
+  {label: "Team", path: "/contact", id: "Team"},
+  {label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
+];
+const ItemsTeam = [
+  {label: "Team", path: "/contact", id: "Home"},
+  {label: "Home Page", path: "/", id: "Home Page"},
+  {label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
+];
+const ItemsCheatsheet = [
+  {label: "Cheatsheet", path: "/cheatsheet", id: "Home"},
+  {label: "Home Page", path: "/", id: "Home Page"},
+  {label: "Team", path: "/contact", id: "Team"},
 ];
