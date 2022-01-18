@@ -1,8 +1,8 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "../components/navbar/Navbar";
 import Head from "next/head";
-import Script from "next/script";
+import Footer from "../components/footer/Footer";
+import ContactBody from "../components/contactBody/contactBody";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function ContactUs() {
   return (
@@ -12,7 +12,8 @@ function ContactUs() {
 
         <title> Hackers' Club | University of Peradeniya</title>
       </Head>
-
+      <ContactBody />
+      <Footer />
     </React.Fragment>
   );
 }
