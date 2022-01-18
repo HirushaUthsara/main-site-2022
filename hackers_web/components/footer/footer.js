@@ -39,11 +39,6 @@ export default function Footer() {
             <Container variant="flush" className={`${classes["footer-links"]}`}>
               <Row>
                 <Link href="#">
-                  <a>Pre-Datathon</a>
-                </Link>
-              </Row>
-              <Row>
-                <Link href="#">
                   <a>Pre-HackaThon</a>
                 </Link>
               </Row>
