@@ -21,7 +21,7 @@ export default function NavBar(props) {
     }
   }, [path]);
 
-  console.log(path.path);
+  //console.log(path.path);
 
   function navSelect(value) {
     setSelect(value);
