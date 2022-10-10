@@ -16,12 +16,8 @@ export default function NavBar(props) {
       setNavItems(ItemsHome);
     } else if (path.path == "/contact") {
       setNavItems(ItemsTeam);
-    } else if (path.path == "/cheatsheet") {
-      setNavItems(ItemsCheatsheet);
     }
   }, [path]);
-
-  //console.log(path.path);
 
   function navSelect(value) {
     setSelect(value);
@@ -90,16 +86,16 @@ const ItemsHome = [
   {label: "Events", path: "#Events", id: "Events"},
   {label: "FAQ", path: "#FAQ", id: "FAQ"},
   {label: "Contact Us", path: "#ContactUs", id: "Contact Us"},
-  //{label: "Team", path: "/contact", id: "Team"},
-  {label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
+  {label: "Team", path: "/contact", id: "Team"},
+  // {label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
 ];
 const ItemsTeam = [
   {label: "Team", path: "/contact", id: "Home"},
   {label: "Home Page", path: "/", id: "Home Page"},
-  {label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
+  // {label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
 ];
-const ItemsCheatsheet = [
-  {label: "Cheatsheet", path: "/cheatsheet", id: "Home"},
-  {label: "Home Page", path: "/", id: "Home Page"},
-  {label: "Team", path: "/contact", id: "Team"},
-];
+// const ItemsCheatsheet = [
+//   {label: "Cheatsheet", path: "/cheatsheet", id: "Home"},
+//   {label: "Home Page", path: "/", id: "Home Page"},
+//   {label: "Team", path: "/contact", id: "Team"},
+// ];
