@@ -24,8 +24,6 @@ export default function NavBar(props) {
     }
   }, [asPath]);
 
-  //console.log(path.path);
-
   function navSelect(value) {
     setSelect(value);
     size.width < 992
@@ -101,8 +99,9 @@ const ItemsTeam = [
   {label: "Home Page", path: "/", id: "Home Page"},
   //{label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
 ];
-const ItemsCheatsheet = [
-  {label: "Cheatsheet", path: "/cheatsheet", id: "Home"},
-  {label: "Home Page", path: "/", id: "Home Page"},
-  {label: "Team", path: "/contact", id: "Team"},
-];
+
+// const ItemsCheatsheet = [
+//   {label: "Cheatsheet", path: "/cheatsheet", id: "Home"},
+//   {label: "Home Page", path: "/", id: "Home Page"},
+//   {label: "Team", path: "/contact", id: "Team"},
+// ];
