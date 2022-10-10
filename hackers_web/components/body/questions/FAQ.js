@@ -36,8 +36,8 @@ function FAQ() {
       related to the IT field and expected by the industry
       <br />
       <br />
-      to achieve that we join hands with ACES and conduct "Pre-DATATHON",
-      "Pre-CODERS" competitions and events to make students ready to make their
+      to achieve that we join hands with ACES and conduct &quot;Pre-DATATHON&quot;,
+      &quot;Pre-CODERS&quot; competitions and events to make students ready to make their
       move in the grand event.
       <br />
       <br />
@@ -49,7 +49,7 @@ function FAQ() {
       <br />
       <br />
       We do not limit to all technical stuff. We organize an intra faculty FPS
-      gaming competition "WARZONE" which brings students together and have fun
+      gaming competition &quot;WARZONE&quot; which brings students together and have fun
       while fighting for the victory.
     </p>
   );

@@ -10,7 +10,7 @@ function CheatSheet() {
       <Head>
         <link rel="icon" href="/logo-2.png" />
 
-        <title> Hackers' Club | University of Peradeniya</title>
+        <title> Hackers&apos; Club | University of Peradeniya</title>
       </Head>
 
     </React.Fragment>

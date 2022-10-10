@@ -20,8 +20,8 @@ export default function ContactBody() {
             <div>
               <h1>Feel free to express your thoughts!</h1>
               <p>
-                If you feel there's something you need to tell us or if you have
-                any new suggestion. Don't hesitate. we are much happy to have
+                If you feel there&apos;s something you need to tell us or if you have
+                any new suggestion. Don&apos;t hesitate. we are much happy to have
                 your feedback.
               </p>
             </div>
