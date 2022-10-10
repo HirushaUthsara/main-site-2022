@@ -39,7 +39,7 @@ function Timer() {
       <p
         className={`${classes["stay-tuned"]} animate__animated animate__fadeIn`}
       >
-        STAY TUNED WITH HACKERS' CLUB
+        STAY TUNED WITH HACKERS&apos; CLUB
       </p>
       <h2
         className={`${classes["happenning-now"]} animate__animated animate__fadeIn`}
@@ -50,7 +50,7 @@ function Timer() {
         <div className={classes["counter-text"]}>
           <h3>Developer Series Sessions</h3>
           <p className={classes["stay-tuned"]}>
-            Introduction to some utilities that an engineer's must have
+            Introduction to some utilities that an engineer&apos;s must have
             knowledge about
           </p>
           <Button />

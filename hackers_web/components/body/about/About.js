@@ -10,7 +10,7 @@ const para_2 =
 function About() {
   return (
     <React.Fragment>
-      <h1 className={classes.topic}>About Hackers' Club</h1>
+      <h1 className={classes.topic}>About Hackers&apos; Club</h1>
       <div className={classes["paragraph-container"]}>
         <Paragraph title="Who are we?" details={para_1} />
 

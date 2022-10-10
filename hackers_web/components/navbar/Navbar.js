@@ -3,8 +3,11 @@ import { useState, useEffect, Fragment } from "react";
 import Link from "next/link";
 import useWindowSize from "./WindowSize";
 import useWindowPath from "./WindowPath";
+import { useRouter } from 'next/router';
 
 export default function NavBar(props) {
+  const { asPath } = useRouter()
+
   const [select, setSelect] = useState(["Home"]);
   const [navItems, setNavItems] = useState(Items);
   const style = classes.style;
@@ -12,12 +15,14 @@ export default function NavBar(props) {
   const path = useWindowPath();
 
   useEffect(() => {
-    if (path.path == "/") {
+    if (asPath == "/") {
       setNavItems(ItemsHome);
-    } else if (path.path == "/contact") {
+    } else if (asPath == "/contact") {
       setNavItems(ItemsTeam);
+    } else if (asPath == "/cheatsheet") {
+      setNavItems(ItemsCheatsheet);
     }
-  }, [path]);
+  }, [asPath]);
 
   function navSelect(value) {
     setSelect(value);
@@ -86,14 +91,15 @@ const ItemsHome = [
   {label: "Events", path: "#Events", id: "Events"},
   {label: "FAQ", path: "#FAQ", id: "FAQ"},
   {label: "Contact Us", path: "#ContactUs", id: "Contact Us"},
-  {label: "Team", path: "/contact", id: "Team"},
-  // {label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
+  //{label: "Team", path: "/contact", id: "Team"},
+  //{label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
 ];
 const ItemsTeam = [
   {label: "Team", path: "/contact", id: "Home"},
   {label: "Home Page", path: "/", id: "Home Page"},
-  // {label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
+  //{label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
 ];
+
 // const ItemsCheatsheet = [
 //   {label: "Cheatsheet", path: "/cheatsheet", id: "Home"},
 //   {label: "Home Page", path: "/", id: "Home Page"},
