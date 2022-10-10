@@ -112,7 +112,7 @@ export default function Footer() {
               height={100}
             />
             <p>
-              Copyright © 2020 Hackers' Club, University of Peradeniya. All
+              Copyright © 2020 Hackers&apos; Club, University of Peradeniya. All
               Rights Reserved.
             </p>
           </Col>
