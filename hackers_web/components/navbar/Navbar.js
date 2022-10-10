@@ -90,7 +90,7 @@ const ItemsHome = [
   {label: "Events", path: "#Events", id: "Events"},
   {label: "FAQ", path: "#FAQ", id: "FAQ"},
   {label: "Contact Us", path: "#ContactUs", id: "Contact Us"},
-  {label: "Team", path: "/contact", id: "Team"},
+  //{label: "Team", path: "/contact", id: "Team"},
   {label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
 ];
 const ItemsTeam = [
