@@ -13,9 +13,10 @@ function Contact() {
   return (
     <React.Fragment>
       <Head>
-        <link rel="icon" href="/logo-2.png" />
 
         <title> Hackers&apos; Club | University of Peradeniya</title>
+        <meta name="description" content="hackers club" />
+        <link rel="icon" href="logo-2.png" />
       </Head>
       <ContactBody />
       <Footer />

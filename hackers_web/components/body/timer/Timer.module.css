@@ -36,6 +36,7 @@
     font-size: 1.5rem;
 }
 
+
 @media screen and (min-width: 900px) {
     .timerContent {
         margin-top: 2rem;
@@ -51,6 +52,7 @@
     .timer-container {
         margin-top: 1.5rem;
     }
+
 }
 
 @media screen and (min-width: 900px) and (max-width: 1012px) {
@@ -60,7 +62,7 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
     }
 }
 
