@@ -53,7 +53,9 @@ function Timer() {
             Introduction to some utilities that an engineer&apos;s must have
             knowledge about
           </p>
-          <Button />
+          <div className={classes["button-class"]}>
+            <Button />
+          </div>
         </div>
         <TimerCounter hoursMinSecs={hoursMinSecs} />
       </div>

@@ -5,7 +5,7 @@ import 'animate.css';
 
 function Cover() {
   return (
-    <div className={`${classes["cover-container"]}`} id="Home">
+    <div className={`${classes["cover-container"]}`} id="Home" style={{background:`url("/img/bg/cover_temp7.jpg")`}}>
       <div className="animate__animated animate__pulse">
       <h1>Hackers&apos; Club</h1>
       <h1 >University of Peradeniya</h1>

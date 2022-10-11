@@ -5,7 +5,7 @@ import { BsFillPlayBtnFill } from "react-icons/bs";
 function PlayButton() {
   return (
     <div className={classes["btn-container"]}>
-      <a className={`${classes["btn-grad"]}`} href="https://www.youtube.com/watch?v=-iZl9ovWpX4&ab_channel=Hackers%27ClubUOP" target="blank">
+      <a className={`${classes["btn-grad"]}`} href="https://www.youtube.com/channel/UCdsaElflkOhbX6Rv6r2uH5A/" target="blank">
         Intro <span className={classes.icon}><BsFillPlayBtnFill/></span>
       </a>
     </div>

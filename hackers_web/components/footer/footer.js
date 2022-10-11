@@ -18,18 +18,13 @@ export default function Footer() {
             <h4>Useful Links</h4>
             <Container variant="flush" className={`${classes["footer-links"]}`}>
               <Row>
-                <Link href="#">
-                  <a>Gallery</a>
-                </Link>
-              </Row>
-              <Row>
                 <Link href="/contact">
                   <a>Contact Us</a>
                 </Link>
               </Row>
               <Row>
-                <Link href="https://aces.ce.pdn.ac.lk/">
-                  <a>ACES</a>
+                <Link href="https://aces.ce.pdn.ac.lk/" target="blank">
+                  <a target="blank">ACES</a>
                 </Link>
               </Row>
             </Container>
@@ -38,13 +33,13 @@ export default function Footer() {
             <h4>Events</h4>
             <Container variant="flush" className={`${classes["footer-links"]}`}>
               <Row>
-                <Link href="#">
-                  <a>Pre-HackaThon</a>
+                <Link href="https://aces.ce.pdn.ac.lk/aces-hackathon/" target="blank">
+                  <a target="blank">HackaThon</a>
                 </Link>
               </Row>
               <Row>
-                <Link href="#">
-                  <a>Pre-Coders</a>
+                <Link href="https://aces.ce.pdn.ac.lk/aces-coders/" target="blank">
+                  <a target="blank">Coders</a>
                 </Link>
               </Row>
             </Container>
@@ -73,6 +68,7 @@ export default function Footer() {
                 <Col>
                   <a
                     href="https://www.facebook.com/uophackers"
+                    target="blank"
                     className={`${classes["follow-fb"]}`}
                   >
                     <FontAwesomeIcon
@@ -84,6 +80,7 @@ export default function Footer() {
                 <Col>
                   <a
                     href="https://www.youtube.com/channel/UCdsaElflkOhbX6Rv6r2uH5A/"
+                    target="blank"
                     className={`${classes["follow-yt"]}`}
                   >
                     <FontAwesomeIcon
@@ -112,7 +109,7 @@ export default function Footer() {
               height={100}
             />
             <p>
-              Copyright © 2020 Hackers&apos; Club, University of Peradeniya. All
+              Copyright © 2021/22 Hackers&apos; Club, University of Peradeniya. All
               Rights Reserved.
             </p>
           </Col>
