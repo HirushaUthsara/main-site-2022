@@ -10,7 +10,7 @@ export default function ContactBody() {
       <Container>
         <Row>
           <Col md={6} className="text-center">
-            <Image
+            <Image alt="contact-img"
               src="/img/contactus/contactus.jpg"
               width={500}
               height={500}

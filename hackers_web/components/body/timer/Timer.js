@@ -9,8 +9,8 @@ function Timer() {
   /*Months are count from 0-11 for Jan => 0 Dec => 11*/
   const endDate = new Date(
     2021,
-    11,
-    26,
+    9,
+    12,
     0,
     0,
     0
@@ -42,7 +42,7 @@ function Timer() {
         STAY TUNED WITH HACKERS&apos; CLUB
       </p>
       <h2
-        className={`${classes["happenning-now"]} animate__animated animate__fadeIn`}
+        className={`${classes["happening-now"]} animate__animated animate__fadeIn`}
       >
         Happening Now!
       </h2>
