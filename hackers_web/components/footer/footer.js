@@ -106,7 +106,7 @@ export default function Footer() {
         </Row>
         <Row className={`${classes["footer-logo-sec"]}`}>
           <Col>
-            <Image
+            <Image alt="footer-logo"
               src="/img/logo/hackers-black-full.png"
               width={300}
               height={100}

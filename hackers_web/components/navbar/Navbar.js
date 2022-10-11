@@ -3,10 +3,11 @@ import { useState, useEffect, Fragment } from "react";
 import Link from "next/link";
 import useWindowSize from "./WindowSize";
 import useWindowPath from "./WindowPath";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
+import Image from "next/image";
 
 export default function NavBar(props) {
-  const { asPath } = useRouter()
+  const { asPath } = useRouter();
 
   const [select, setSelect] = useState(["Home"]);
   const [navItems, setNavItems] = useState(Items);
@@ -37,12 +38,20 @@ export default function NavBar(props) {
     <Fragment>
       <nav className={`navbar navbar-expand-lg ${classes.Navbar}`}>
         <div className="container">
-          <Link className="navbar-brand" href="/">
-            <img
+          <Link className="navbar-brand" href="/" passHref>
+            {/*<img
               src="/logo-2.png"
               className={`d-inline-block align-top ${classes.link}`}
               alt="Hackers Logo"
-            />
+            />*/}
+            <div className={`d-inline-block align-top ${classes.link}`}>
+              <Image
+                src="/logo-2.png"
+                alt="Hackers Logo"
+                height="40px"
+                width="35px"
+              />
+            </div>
           </Link>
           <button
             className="navbar-toggler"
@@ -53,11 +62,19 @@ export default function NavBar(props) {
             aria-expanded="false"
             id="button"
           >
-            <img
+            {/*<img
               src="/fa-bar.png"
               className="d-inline-block align-top"
               alt="Hackers Logo"
-            />
+          />*/}
+            <div className="d-inline-block align-top">
+              <Image
+                src="/fa-bar.png"
+                alt="far-bar"
+                height="35px"
+                width="35px"
+              />
+            </div>
           </button>
           <div className="navbar-collapse collapse" id="navbar">
             <div className="navbar-nav ms-auto">
@@ -85,18 +102,18 @@ export default function NavBar(props) {
 }
 const Items = [];
 const ItemsHome = [
-  {label: "Home", path: "#Home", id: "Home"},
-  {label: "About", path: "#About", id: "About"},
-  {label: "Live Now", path: "#Live_Now", id: "Live Now"},
-  {label: "Events", path: "#Events", id: "Events"},
-  {label: "FAQ", path: "#FAQ", id: "FAQ"},
-  {label: "Contact Us", path: "#ContactUs", id: "Contact Us"},
+  { label: "Home", path: "#Home", id: "Home" },
+  { label: "About", path: "#About", id: "About" },
+  { label: "Live Now", path: "#Live_Now", id: "Live Now" },
+  { label: "Events", path: "#Events", id: "Events" },
+  { label: "FAQ", path: "#FAQ", id: "FAQ" },
+  { label: "Contact Us", path: "#ContactUs", id: "Contact Us" },
   //{label: "Team", path: "/contact", id: "Team"},
   //{label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
 ];
 const ItemsTeam = [
-  {label: "Team", path: "/contact", id: "Home"},
-  {label: "Home Page", path: "/", id: "Home Page"},
+  { label: "Team", path: "/contact", id: "Home" },
+  { label: "Home Page", path: "/", id: "Home Page" },
   //{label: "Cheatsheet", path: "/cheatsheet", id: "Cheatsheet"},
 ];
 

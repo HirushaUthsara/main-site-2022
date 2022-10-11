@@ -11,31 +11,32 @@ function TimerCounter(props) {
     seconds,
   ]);
 
-  const tick = () => {
-    if (days === 0 && hrs === 0 && mins === 0 && secs === 0) reset();
-    else if (hrs === 0 && mins === 0 && secs === 0) {
-      setTime([days - 1, 23, 59, 59]);
-    } else if (mins === 0 && secs === 0) {
-      setTime([days, hrs - 1, 59, 59]);
-    } else if (secs === 0) {
-      setTime([days, hrs, mins - 1, 59]);
-    } else {
-      setTime([days, hrs, mins, secs - 1]);
-    }
-  };
-
   const reset = () => setTime([0, 0, 0, 0]);
 
   useEffect(() => {
+    const tick = () => {
+      if (days === 0 && hrs === 0 && mins === 0 && secs === 0) reset();
+      else if (hrs === 0 && mins === 0 && secs === 0) {
+        setTime([days - 1, 23, 59, 59]);
+      } else if (mins === 0 && secs === 0) {
+        setTime([days, hrs - 1, 59, 59]);
+      } else if (secs === 0) {
+        setTime([days, hrs, mins - 1, 59]);
+      } else {
+        setTime([days, hrs, mins, secs - 1]);
+      }
+    };
+    
     const timerId = setInterval(() => tick(), 1000);
     return () => clearInterval(timerId);
-  }, [dys, hrs, mins, secs]);
+    
+  }, [days, dys, hrs, mins, secs]);
 
   return (
     <div className={classes["timer-container"]}>
       <CounterElement count="0" detail="Days" />
       <CounterElement count={hrs.toString()} detail="Hours" />
-      <CounterElement count={mins.toString()} detail="Minuits" />
+      <CounterElement count={mins.toString()} detail="Minutes" />
       <CounterElement count={secs.toString()} detail="Seconds" />
       <div className={classes.dates}>
         <div>

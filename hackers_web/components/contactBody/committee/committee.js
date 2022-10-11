@@ -189,7 +189,7 @@ export default function Committee() {
 function buildMemberTile(img, post, name, linkedIn, email) {
   return (
     <div className={`${classes["member"]}`}>
-      <Image
+      <Image alt="members"
         src={`${img}`}
         width={150}
         height={150}
