@@ -1,5 +1,5 @@
 .cover-container {
-    /*background: url("/img/bg/cover_temp7.jpg");*/
+    background: url("/img/bg/cover_temp7.jpg");
     background-size: cover;
     background-position: 0px -150px;
     background-repeat: no-repeat;
@@ -44,3 +44,29 @@
         font-size: 15px;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .cover-container {
+        background-position: -300px 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cover-container {
+        background-position: -450px 0px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .cover-container {
+        background-position: -500px 0px;
+    }
+}
+
+
+@media screen and (max-width: 321px) {
+    .cover-container {
+        background-position: -550px 0px;
+    }
+}
+
