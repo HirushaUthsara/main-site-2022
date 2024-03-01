@@ -1,20 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import classes from "./Timer.module.css";
-import "animate.css";
-import Button from "./Button";
 import TimerCounter from "./timerCounter/TimerCounter";
 import date from "date-and-time";
 
 function Timer() {
-  /*Months are count from 0-11 for Jan => 0 Dec => 11*/
-  const endDate = new Date(
-    2021,
-    9,
-    12,
-    0,
-    0,
-    0
-  ); /*year, month, day, hours, minutes, and seconds*/
+  const endDate = new Date(2024, 2, 2, 18, 0, 0); // year, month, day, hours, minutes, and seconds
   const now = new Date();
   let updatingDate = new Date();
 
@@ -30,35 +20,51 @@ function Timer() {
   let seconds = parseInt(date.subtract(endDate, updatingDate).toSeconds());
 
   let hoursMinSecs = { days, hours, minutes, seconds };
-  if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
-    hoursMinSecs = { days: 0, hours: 0, minutes: 0, seconds: 0 };
-  }
+
+  const [timerFinished, setTimerFinished] = useState(false);
+  
+
+  useEffect(() => {
+    if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
+      setTimerFinished(true);
+    }
+  }, [days, hours, minutes, seconds]);
+
+  {/*const [twoHoursPassed, setTwoHoursPassed] = useState(false);
+
+  useEffect(() => {
+    const twoHourTimeout = setTimeout(() => {
+      setTwoHoursPassed(true);
+    }, 1 * 60 * 1000); // 2 hours in milliseconds
+
+    return () => clearTimeout(twoHourTimeout);
+  }, []);
+
+  if (twoHoursPassed && timerFinished) {
+    // Hide the entire component after two hours or when the timer is finished
+    return null;
+  }*/}
 
   return (
     <div className={classes["timer-container"]}>
-      <p
-        className={`${classes["stay-tuned"]} animate__animated animate__fadeIn`}
-      >
+      <p className={`${classes["stay-tuned"]} animate__animated animate__fadeIn`}>
         STAY TUNED WITH HACKERS&apos; CLUB
       </p>
-      <h2
-        className={`${classes["happening-now"]} animate__animated animate__fadeIn`}
-      >
-        Happening Now!
+      <h2 className={`${classes["happening-now"]} animate__animated animate__fadeIn`}>
+        Competitive Programming Session 01
       </h2>
-      <div className={classes.timerContent}>
-        <div className={classes["counter-text"]}>
-          <h3>Developer Series Sessions</h3>
-          <p className={classes["stay-tuned"]}>
-            Introduction to some utilities that an engineer&apos;s must have
-            knowledge about
-          </p>
-          <div className={classes["button-class"]}>
-            <Button />
-          </div>
+
+      {timerFinished ? (
+        <div className={classes.timerContent}>
+          <h3 className={`${classes["happenning-now"]} animate__animated animate__fadeIn`}>
+            Happening Now!
+          </h3>
         </div>
-        <TimerCounter hoursMinSecs={hoursMinSecs} />
-      </div>
+      ) : (
+        <div className={classes.timerContent}>
+          <TimerCounter hoursMinSecs={hoursMinSecs} />
+        </div>
+      )}
     </div>
   );
 }
