@@ -15,39 +15,39 @@ export default function Committee() {
    * change names and links in below map (data)
    */
 
-  let imgFolder = "/img/committees/2021-2022/";
+  let imgFolder = "/img/committees/2024-2025/";
 
   let data = {
     senior_treasurer: {
-      name: "Dr. Asitha Bandaranayake",
+      name: "Dr.Damayanthi Herath",
       linkedIn: "#",
-      email: "#",
+      email: "#", 
     },
-    president: { name: "Sathira Basnayake", linkedIn: "#", email: "#" },
-    vice_president: { name: "Hansa Alahakoon", linkedIn: "#", email: "#" },
-    secretary: { name: "Rushika Perera", linkedIn: "#", email: "#" },
+    president: { name: "Ruchira Tharaka", linkedIn: "#", email: "#" },
+    vice_president: { name: "Chaminda Weerasinghe", linkedIn: "#", email: "#" },
+    secretary: { name: "Uthsara Wickramaarachchi", linkedIn: "#", email: "#" },
     assistant_secretary: {
-      name: "Avishka Abeywikrama",
+      name: "Tharindu Lakshan",
       linkedIn: "#",
       email: "#",
     },
-    editor: { name: "Virajini Dharmathilaka", linkedIn: "#", email: "#" },
+    editor: { name: "Chamudi Jayasumana", linkedIn: "#", email: "#" },
     junior_treasurer: {
-      name: "Nimnad Kodithuwakku",
+      name: "Sameera Kumarasinghe",
       linkedIn: "#",
       email: "#",
     },
-    committee_member_1: { name: "Buddhi Perera", linkedIn: "#", email: "#" },
+    committee_member_1: { name: "Piumal Rathnayake", linkedIn: "#", email: "#" },
     committee_member_2: {
-      name: "Yoshith Sri Harshana",
+      name: "Didula Induwara",
       linkedIn: "#",
       email: "#",
     },
-    committee_member_3: { name: "Esara Sithumal", linkedIn: "#", email: "#" },
-    committee_member_4: { name: "Ishini Udara", linkedIn: "#", email: "#" },
-    committee_member_5: { name: "Kushan manahara", linkedIn: "#", email: "#" },
+    committee_member_3: { name: "Jeevajith Madushanka", linkedIn: "#", email: "#" },
+    committee_member_4: { name: "Hirushi Gunasekara", linkedIn: "#", email: "#" },
+    committee_member_5: { name: "Sandun Munasinghe", linkedIn: "#", email: "#" },
     committee_member_6: {
-      name: "Piumal Rathnayake",
+      name: "Janindu Iroshan",
       linkedIn: "#",
       email: "#",
     },
@@ -59,7 +59,7 @@ export default function Committee() {
         <Row>
           <Col md={4} sm={6}>
             {buildMemberTile(
-              imgFolder + "senior_treasurer.png",
+              imgFolder + "senior_treasurer.jpg",
               "SENIOR TREASURER",
               data["senior_treasurer"]["name"],
               data["senior_treasurer"]["linkedIn"],
@@ -68,7 +68,7 @@ export default function Committee() {
           </Col>
           <Col md={4} sm={6}>
             {buildMemberTile(
-              imgFolder + "president.png",
+              imgFolder + "president.jpeg",
               "PRESIDENT",
               data["president"]["name"],
               data["president"]["linkedIn"],
@@ -77,7 +77,7 @@ export default function Committee() {
           </Col>
           <Col md={4} sm={12}>
             {buildMemberTile(
-              imgFolder + "vice_president.png",
+              imgFolder + "vice_president.jpg",
               "VICE PRESIDENT",
               data["vice_president"]["name"],
               data["vice_president"]["linkedIn"],
@@ -88,7 +88,7 @@ export default function Committee() {
         <Row>
           <Col md={3} sm={6}>
             {buildMemberTile(
-              imgFolder + "secretary.png",
+              imgFolder + "secretary.jpg",
               "SECRETARY",
               data["secretary"]["name"],
               data["secretary"]["linkedIn"],
@@ -97,7 +97,7 @@ export default function Committee() {
           </Col>
           <Col md={3} sm={6}>
             {buildMemberTile(
-              imgFolder + "assistant_secretary.png",
+              imgFolder + "assistant_secretary.jpeg",
               "ASSISTANT SECRETARY",
               data["assistant_secretary"]["name"],
               data["assistant_secretary"]["linkedIn"],
@@ -106,7 +106,7 @@ export default function Committee() {
           </Col>
           <Col md={3} sm={6}>
             {buildMemberTile(
-              imgFolder + "editor.png",
+              imgFolder + "editor.jpg",
               "EDITOR",
               data["editor"]["name"],
               data["editor"]["linkedIn"],
@@ -115,7 +115,7 @@ export default function Committee() {
           </Col>
           <Col md={3} sm={6}>
             {buildMemberTile(
-              imgFolder + "junior_treasurer.png",
+              imgFolder + "junior_treasurer.jpg",
               "JUNIOR TREASURER",
               data["junior_treasurer"]["name"],
               data["junior_treasurer"]["linkedIn"],
@@ -126,7 +126,7 @@ export default function Committee() {
         <Row>
           <Col md={4} sm={6}>
             {buildMemberTile(
-              imgFolder + "committee_member_1.png",
+              imgFolder + "committee_member_1.jpeg",
               "COMMITTEE MEMBER",
               data["committee_member_1"]["name"],
               data["committee_member_1"]["linkedIn"],
@@ -135,7 +135,7 @@ export default function Committee() {
           </Col>
           <Col md={4} sm={6}>
             {buildMemberTile(
-              imgFolder + "committee_member_2.png",
+              imgFolder + "committee_member_2.jpeg",
               "COMMITTEE MEMBER",
               data["committee_member_2"]["name"],
               data["committee_member_2"]["linkedIn"],
@@ -144,7 +144,7 @@ export default function Committee() {
           </Col>
           <Col md={4} sm={12}>
             {buildMemberTile(
-              imgFolder + "committee_member_3.png",
+              imgFolder + "committee_member_3.jpg",
               "COMMITTEE MEMBER",
               data["committee_member_3"]["name"],
               data["committee_member_3"]["linkedIn"],
@@ -155,7 +155,7 @@ export default function Committee() {
         <Row>
           <Col md={4} sm={6}>
             {buildMemberTile(
-              imgFolder + "committee_member_4.png",
+              imgFolder + "committee_member_4.jpg",
               "COMMITTEE MEMBER",
               data["committee_member_4"]["name"],
               data["committee_member_4"]["linkedIn"],
@@ -164,7 +164,7 @@ export default function Committee() {
           </Col>
           <Col md={4} sm={6}>
             {buildMemberTile(
-              imgFolder + "committee_member_5.png",
+              imgFolder + "committee_member_5.jpg",
               "COMMITTEE MEMBER",
               data["committee_member_5"]["name"],
               data["committee_member_5"]["linkedIn"],
@@ -173,7 +173,7 @@ export default function Committee() {
           </Col>
           <Col md={4} sm={12}>
             {buildMemberTile(
-              imgFolder + "committee_member_6.png",
+              imgFolder + "committee_member_6.jpg",
               "COMMITTEE MEMBER",
               data["committee_member_6"]["name"],
               data["committee_member_6"]["linkedIn"],
