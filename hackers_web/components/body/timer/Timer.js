@@ -4,7 +4,7 @@ import TimerCounter from "./timerCounter/TimerCounter";
 import date from "date-and-time";
 
 function Timer() {
-  const endDate = new Date(2024, 2, 2, 13, 0, 0); // year, month, day, hours, minutes, and seconds
+  const endDate = new Date(2024, 2, 2, 18, 0, 0); // year, month, day, hours, minutes, and seconds
   const now = new Date();
   let updatingDate = new Date();
 
