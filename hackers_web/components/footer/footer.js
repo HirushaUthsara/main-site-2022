@@ -23,22 +23,22 @@ export default function Footer() {
                 </Link>
               </Row>
               <Row>
-                <Link href="https://aces.ce.pdn.ac.lk/" target="blank">
-                  <a target="blank">ACES</a>
+                <Link href="https://web.facebook.com/acespera/?_rdc=1&_rdr" target="blank">
+                  <a target="blank" >ACES</a>
                 </Link>
               </Row>
             </Container>
           </Col>
-          <Col md={6} lg={2}>
+          <Col md={6} lg={2} >
             <h4>Events</h4>
             <Container variant="flush" className={`${classes["footer-links"]}`}>
               <Row>
-                <Link href="https://aces.ce.pdn.ac.lk/aces-hackathon/" target="blank">
+                <Link href="https://web.facebook.com/aces.hackathon/?_rdc=1&_rdr" target="blank">
                   <a target="blank">HackaThon</a>
                 </Link>
               </Row>
               <Row>
-                <Link href="https://aces.ce.pdn.ac.lk/aces-coders/" target="blank">
+                <Link href="https://eng.pdn.ac.lk/10-law-schools-where-the-most-accepted-students-enroll-2/" target="blank">
                   <a target="blank">Coders</a>
                 </Link>
               </Row>
@@ -48,13 +48,13 @@ export default function Footer() {
             <h4>Sessions</h4>
             <Container variant="flush" className={`${classes["footer-links"]}`}>
               <Row>
-                <Link href="#">
-                  <a>Developer Series Sessions</a>
+                <Link href="#Events">
+                  <a className="disabled-link">Developer Series Sessions</a>
                 </Link>
               </Row>
               <Row>
-                <Link href="#">
-                  <a>Competitive Programming Sessions</a>
+                <Link href="#Events">
+                  <a className="disabled-link">Competitive Programming Sessions</a>
                 </Link>
               </Row>
             </Container>
@@ -90,7 +90,11 @@ export default function Footer() {
                   </a>
                 </Col>
                 <Col>
-                  <a href="#" className={`${classes["follow-li"]}`}>
+                  <a href="https://www.linkedin.com/company/hackers-club-uop/?trk=ppro_cprof&originalSubdomain=lk" 
+                    target="blank"
+                    className={`${classes["follow-li"]}`}
+                    
+                  >
                     <FontAwesomeIcon
                       icon={faLinkedin}
                       size="3x"
