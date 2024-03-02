@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 
 import classes from "./contactbody.module.css";
-import Committee from "./committee/Committee";
+import Committee from "./committee/committee";
 
 export default function ContactBody() {
   return (
