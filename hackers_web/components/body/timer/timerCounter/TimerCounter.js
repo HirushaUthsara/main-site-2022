@@ -34,12 +34,12 @@ function TimerCounter(props) {
 
   return (
     <div className={classes["timer-container"]}>
-      <CounterElement count="0" detail="Days" />
+      <CounterElement count={dys.toString()} detail="Days" />
       <CounterElement count={hrs.toString()} detail="Hours" />
       <CounterElement count={mins.toString()} detail="Minutes" />
       <CounterElement count={secs.toString()} detail="Seconds" />
       <div className={classes.dates}>
-        <div>
+        {/*<div>
           <p>
             <strong>Start:</strong>
           </p>
@@ -50,6 +50,12 @@ function TimerCounter(props) {
             <strong>End:</strong>
           </p>
           <p>6 December, 2020</p>
+  </div>*/}
+        <div>
+          <p>
+            <strong>Happening on:</strong>
+          </p>
+          <p>2 March 2024</p>
         </div>
       </div>
     </div>
