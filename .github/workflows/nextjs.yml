@@ -51,9 +51,9 @@ jobs:
         with:
           path: |
             hackers_web/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('hackers_web/**/package-lock.json', 'hackers_web/**/yarn.lock') }}-${{ hashFiles('hackers_web/**.[jt]s', 'hackers_web/**.[jt]sx') }}
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('hackers_web/**/package-lock.json', 'hackers_web/**/yarn.lock') }}-
       - name: Install dependencies
         run: cd hackers_web && ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
